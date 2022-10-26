@@ -54,4 +54,6 @@ export * from './lib/utils/validator';
 export * from './lib/services/modal.service';
 export * from './lib/services/user.service';
 
+export * from './lib/yti-common-ui-config';
+
 export * from './lib/yti-common.module';

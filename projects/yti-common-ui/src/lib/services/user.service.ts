@@ -3,6 +3,7 @@ import { combineResultSets, convertToMapSet, hasAny } from '../utils/set';
 import { BehaviorSubject, Observable } from 'rxjs';
 import { HttpClient, HttpErrorResponse, HttpParams } from '@angular/common/http';
 import { map } from 'rxjs/operators';
+import { KeycloakService } from 'keycloak-angular';
 
 export const AUTHENTICATED_USER_ENDPOINT = new InjectionToken<string>('authenticated.user.endpoint');
 
@@ -97,6 +98,7 @@ const oneMinuteInMs = 60 * 1000;
 export class UserService {
 
   constructor(private http: HttpClient,
+              private keycloak: KeycloakService,
               @Inject(AUTHENTICATED_USER_ENDPOINT) private authenticatedUserEndpoint: string) {
 
     this.updateLoggedInUser().catch(reason => console.error('Resolving user failed: ' + reason));
@@ -146,17 +148,16 @@ export class UserService {
   }
 
   register() {
-    window.open('http://id.eduuni.fi/signup', '_blank');
   }
 
-  login() {
-    const currentUrl = window.location.href;
-    window.location.href = `/Shibboleth.sso/Login?target=${encodeURIComponent(currentUrl)}`;
+  async login() {
+    await this.keycloak.login({
+      redirectUri: window.location.origin
+    });
   }
 
-  logout() {
-    const currentUrl = `${window.location.origin}/logout.html`;
-    window.location.href = `/Shibboleth.sso/Logout?return=${encodeURIComponent(currentUrl)}`;
+  async logout() {
+    await this.keycloak.logout(window.location.href)
   }
 }
 

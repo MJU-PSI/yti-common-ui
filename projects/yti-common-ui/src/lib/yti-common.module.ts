@@ -1,5 +1,4 @@
-import { NgModule } from '@angular/core';
-import { CommonModule } from '@angular/common';
+import { APP_INITIALIZER, ModuleWithProviders, NgModule } from '@angular/core';
 import { AccordionChevronComponent } from './components/accordion-chevron.component';
 import { AjaxLoadingIndicatorComponent } from './components/ajax-loading-indicator.component';
 import { AjaxLoadingIndicatorSmallComponent } from './components/ajax-loading-indicator-small.component';
@@ -31,6 +30,11 @@ import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { TranslateModule } from '@ngx-translate/core';
 import { ClipboardModule } from 'ngx-clipboard';
 import { RouterModule } from '@angular/router';
+import { KeycloakAngularModule, KeycloakService } from 'keycloak-angular';
+import { initializeKeycloak } from './init/keycloak-init.factory';
+import { YtiCommonUiConfig } from './yti-common-ui-config';
+import { YTI_COMMON_UI_CONFIG } from './yti-common-ui-config.token';
+import { HttpClient } from '@angular/common/http';
 
 const components = [
   AccordionChevronComponent,
@@ -78,14 +82,34 @@ const components = [
     NgbModule,
     TranslateModule,
     RouterModule,
-    ClipboardModule
+    ClipboardModule,
+    KeycloakAngularModule
   ],
   providers: [
     ErrorModalService,
     LoginModalService,
     ConfirmationModalService,
     AlertModalService,
-    UserService
+    UserService,
+    {
+      provide: APP_INITIALIZER,
+      useFactory: initializeKeycloak,
+      multi: true,
+      deps: [KeycloakService, YTI_COMMON_UI_CONFIG, HttpClient],
+    }
   ]
 })
-export class YtiCommonModule { }
+export class YtiCommonModule {
+  static forRoot(ytiCommonUiConfig: YtiCommonUiConfig): ModuleWithProviders<YtiCommonModule> {
+    return {
+      ngModule: YtiCommonModule,
+      providers: [
+        {
+          provide: YTI_COMMON_UI_CONFIG,
+          useValue: ytiCommonUiConfig
+        }
+      ]
+    };
+  }
+
+}

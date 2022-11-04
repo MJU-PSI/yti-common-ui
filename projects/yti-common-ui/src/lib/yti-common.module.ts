@@ -25,7 +25,7 @@ import { ClipboardComponent } from './components/clipboard';
 import { AlertModalComponent, AlertModalService } from './components/alert-modal.component';
 import { BrowserModule } from '@angular/platform-browser';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
-import { UserService } from './services/user.service';
+import { AUTHENTICATED_USER_ENDPOINT, UserService } from './services/user.service';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { TranslateModule } from '@ngx-translate/core';
 import { ClipboardModule } from 'ngx-clipboard';
@@ -95,7 +95,7 @@ const components = [
       provide: APP_INITIALIZER,
       useFactory: initializeKeycloak,
       multi: true,
-      deps: [KeycloakService, YTI_COMMON_UI_CONFIG, HttpClient],
+      deps: [KeycloakService, YTI_COMMON_UI_CONFIG, HttpClient, AUTHENTICATED_USER_ENDPOINT],
     }
   ]
 })

@@ -1,6 +1,6 @@
 import { AbstractControl, ValidationErrors } from '@angular/forms';
 import { contains } from './array';
-import ietfLanguageTags from '../../ietf-language-tags.json';
+import * as languageTags from '../../ietf-language-tags.json';
 
 export function requiredList(control: AbstractControl): ValidationErrors | null {
   return Object.values(control.value).length > 0 ? null : {
@@ -11,7 +11,7 @@ export function requiredList(control: AbstractControl): ValidationErrors | null 
 }
 
 export function validateLanguage(control: AbstractControl): ValidationErrors | null {
-  return contains(ietfLanguageTags, control.value) ? null : {
+  return contains(languageTags.ieftLanguageTags, control.value) ? null : {
     validateLanguage: {
       valid: false
     }

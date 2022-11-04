@@ -57,3 +57,7 @@ export * from './lib/services/user.service';
 export * from './lib/yti-common-ui-config';
 
 export * from './lib/yti-common.module';
+
+import * as languageTags from './ietf-language-tags.json';
+export const ietfLanguageTags: string[] = languageTags.ieftLanguageTags;
+

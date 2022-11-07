@@ -1,6 +1,6 @@
 {
-  "name": "@vrk-yti/yti-common-ui",
-  "repository": "git://github.com/VRK-YTI/yti-common-ui.git",
+  "name": "@goraresult/yti-common-ui",
+  "repository": "git://github.com/goraresult/yti-common-ui.git",
   "version": "0.0.1",
   "publishConfig": {
     "registry": "https://npm.pkg.github.com"

@@ -1,4 +1,4 @@
-import { APP_INITIALIZER, ModuleWithProviders, NgModule } from '@angular/core';
+import { APP_INITIALIZER, ModuleWithProviders, NgModule, Optional } from '@angular/core';
 import { AccordionChevronComponent } from './components/accordion-chevron.component';
 import { AjaxLoadingIndicatorComponent } from './components/ajax-loading-indicator.component';
 import { AjaxLoadingIndicatorSmallComponent } from './components/ajax-loading-indicator-small.component';
@@ -100,7 +100,7 @@ const components = [
   ]
 })
 export class YtiCommonModule {
-  static forRoot(ytiCommonUiConfig: YtiCommonUiConfig): ModuleWithProviders<YtiCommonModule> {
+  static forRoot(@Optional() ytiCommonUiConfig: YtiCommonUiConfig): ModuleWithProviders<YtiCommonModule> {
     return {
       ngModule: YtiCommonModule,
       providers: [

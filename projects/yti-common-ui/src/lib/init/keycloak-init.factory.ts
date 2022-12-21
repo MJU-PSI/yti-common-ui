@@ -23,7 +23,8 @@ export function initializeKeycloak(
               onLoad: 'check-sso',
               checkLoginIframe: true,
               silentCheckSsoRedirectUri:
-                window.location.origin + silentCheckSso
+                window.location.origin + silentCheckSso,
+              messageReceiveTimeout: 5000
             }
           })
 
@@ -33,8 +34,8 @@ export function initializeKeycloak(
           resolve()
 
         } catch (error) {
-          console.log("Error during Keycloak initialization: ", error)
-          reject(error);
+          console.log("Error during Keycloak initialization: ", error && error.error)
+          resolve();
         }
       });
     };

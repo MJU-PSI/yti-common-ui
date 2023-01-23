@@ -62,3 +62,7 @@ export * from './lib/yti-common.module';
 import * as languageTags from './ietf-language-tags.json';
 export const ietfLanguageTags: string[] = languageTags.ieftLanguageTags;
 
+import * as apiLanguages from './available-languages.json';
+export const availableLanguages: { code: string, name: string }[] = apiLanguages.availableLanguages;
+export const defaultLanguage: string = apiLanguages.defaultLanguage;
+

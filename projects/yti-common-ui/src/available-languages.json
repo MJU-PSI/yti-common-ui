@@ -1,0 +1,13 @@
+{
+  "availableLanguages": [
+    {
+      "code": "sl",
+      "name": "Slovenščina (SL)"
+    },
+    {
+      "code": "en",
+      "name": "In English (EN)"
+    }
+  ],
+  "defaultLanguage": "en"
+}

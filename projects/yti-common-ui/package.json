@@ -1,6 +1,6 @@
 {
-  "name": "@goraresult/yti-common-ui",
-  "repository": "git://github.com/goraresult/yti-common-ui.git",
+  "name": "@mju-psi/yti-common-ui",
+  "repository": "git://github.com/MJU-PSI/yti-common-ui.git",
   "version": "0.0.3",
   "publishConfig": {
     "registry": "https://npm.pkg.github.com"

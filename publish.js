@@ -17,8 +17,8 @@ let branch = cp.execSync('git rev-parse --abbrev-ref HEAD', {encoding: 'utf-8'})
 branch = branch.replace('/', '-'); // feature/foo -> feature-foo
 
 const meta =
-  branch === 'master' ? '' :
-  branch === 'develop' ? `-beta+${dateString}.g${commit}` :
+  branch === 'prod' ? '' :
+  branch === 'dev' ? `-beta+${dateString}.g${commit}` :
   `-alpha-${dateString}.g${commit}.${branch}`;
 // -alpha- instead of -alpha+ because publish would cut everything after +
 

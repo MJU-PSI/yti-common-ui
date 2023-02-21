@@ -152,7 +152,7 @@ export class UserService {
 
   async login() {
     await this.keycloak.login({
-      redirectUri: window.location.origin
+      redirectUri: window.location.href
     });
   }
 

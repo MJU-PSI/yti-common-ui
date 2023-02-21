@@ -23,7 +23,7 @@ export function initializeKeycloak(
               onLoad: 'check-sso',
               checkLoginIframe: true,
               silentCheckSsoRedirectUri:
-                window.location.origin + silentCheckSso,
+                 window.location.origin + getPathId() + silentCheckSso,
               messageReceiveTimeout: 5000
             }
           })
@@ -40,3 +40,8 @@ export function initializeKeycloak(
       });
     };
 }
+
+function getPathId() {
+  return "/" + window.location.pathname.split('/')[1];
+}
+

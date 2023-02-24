@@ -1,14 +1,14 @@
 import { HttpClient } from "@angular/common/http";
 import { KeycloakService } from "keycloak-angular";
 import { YtiCommonUiConfig } from "../yti-common-ui-config";
-
-const silentCheckSso = '/assets/silent-check-sso.html';
+import { Location } from '@angular/common';
 
 export function initializeKeycloak(
   keycloak: KeycloakService,
   config: YtiCommonUiConfig,
   http: HttpClient,
-  authenticatedUserUrl: string
+  authenticatedUserUrl: string,
+  location: Location
 ): () => Promise<any> {
     return (): Promise<any> => {
       return new Promise<void>(async (resolve, reject) => {
@@ -22,8 +22,7 @@ export function initializeKeycloak(
             initOptions: {
               onLoad: 'check-sso',
               checkLoginIframe: true,
-              silentCheckSsoRedirectUri:
-                 window.location.origin + getPathId() + silentCheckSso,
+              silentCheckSsoRedirectUri: `${window.location.origin}${location.prepareExternalUrl('/assets/silent-check-sso.html')}`,
               messageReceiveTimeout: 5000
             }
           })
@@ -39,9 +38,5 @@ export function initializeKeycloak(
         }
       });
     };
-}
-
-function getPathId() {
-  return "/" + window.location.pathname.split('/')[1];
 }
 

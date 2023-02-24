@@ -35,6 +35,7 @@ import { initializeKeycloak } from './init/keycloak-init.factory';
 import { YtiCommonUiConfig } from './yti-common-ui-config';
 import { YTI_COMMON_UI_CONFIG } from './yti-common-ui-config.token';
 import { HttpClient } from '@angular/common/http';
+import { LocationStrategy } from '@angular/common';
 
 const components = [
   AccordionChevronComponent,
@@ -95,7 +96,7 @@ const components = [
       provide: APP_INITIALIZER,
       useFactory: initializeKeycloak,
       multi: true,
-      deps: [KeycloakService, YTI_COMMON_UI_CONFIG, HttpClient, AUTHENTICATED_USER_ENDPOINT],
+      deps: [KeycloakService, YTI_COMMON_UI_CONFIG, HttpClient, AUTHENTICATED_USER_ENDPOINT, LocationStrategy],
     }
   ]
 })

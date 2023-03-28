@@ -1,0 +1,26 @@
+plugins {
+  id "com.github.node-gradle.node" version "3.5.1"
+}
+
+node {
+    // https://github.com/node-gradle/gradle-node-plugin/blob/master/docs/usage.md
+    download = false
+}
+
+task npmBuild(type: NpmTask) {
+    dependsOn npmInstall
+    args = ['run', 'build:prod']
+}
+
+task npmPack(type: NpmTask) {
+    dependsOn npmBuild
+    args = ['run', 'pack']
+}
+
+task publishTarball(type: Copy) {
+    dependsOn npmPack
+
+    from 'dist/yti-common-ui'
+    include '*.tgz'
+    into 'dist'
+}

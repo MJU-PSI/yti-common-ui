@@ -11,16 +11,3 @@ task npmBuild(type: NpmTask) {
     dependsOn npmInstall
     args = ['run', 'build:prod']
 }
-
-task npmPack(type: NpmTask) {
-    dependsOn npmBuild
-    args = ['run', 'pack']
-}
-
-task publishTarball(type: Copy) {
-    dependsOn npmPack
-
-    from 'dist/yti-common-ui'
-    include '*.tgz'
-    into 'dist'
-}

@@ -9,7 +9,7 @@ https://docs.github.com/en/packages/working-with-a-github-packages-registry/work
 Ensure that:
 * `package.json` contains `private: true`
 * `./.npmrc` points to the github repository
-* `~/.npmrc` contains the github authentication token `npm login --scope=@vrk-yti --registry=https://npm.pkg.github.com`
+* `~/.npmrc` contains the github authentication token `npm login --scope=@mju-psi --registry=https://npm.pkg.github.com`
 * `./projects/yti-common-ui/package.json` -> `version` is bumped if necessary
 
 ```

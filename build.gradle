@@ -3,11 +3,12 @@ plugins {
 }
 
 node {
-    // https://github.com/node-gradle/gradle-node-plugin/blob/master/docs/usage.md
-    download = false
+    version = '14.18.2'
+    yarnVersion = '1.22.5'
+    download = true
 }
 
 task npmBuild(type: NpmTask) {
-    dependsOn npmInstall
+    dependsOn yarn_install
     args = ['run', 'build:prod']
 }

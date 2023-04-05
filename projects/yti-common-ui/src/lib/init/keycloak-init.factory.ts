@@ -15,9 +15,9 @@ export function initializeKeycloak(
         try {
           const isInitialize = await keycloak.init({
             config: {
-              url: config.url,
-              realm: config.realm,
-              clientId: config.clientId
+              url: config.keycloakUrl,
+              realm: config.keycloakRealm,
+              clientId: config.keycloakClientId
             },
             initOptions: {
               onLoad: 'check-sso',

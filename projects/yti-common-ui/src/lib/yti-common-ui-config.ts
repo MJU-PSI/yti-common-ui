@@ -1,5 +1,5 @@
 export interface YtiCommonUiConfig {
-  url: string;
-  realm: string;
-  clientId: string;
+  keycloakUrl: string;
+  keycloakRealm: string;
+  keycloakClientId: string;
 }

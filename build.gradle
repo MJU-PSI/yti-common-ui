@@ -1,0 +1,14 @@
+plugins {
+  id "com.github.node-gradle.node" version "3.5.1"
+}
+
+node {
+    version = '14.18.2'
+    yarnVersion = '1.22.5'
+    download = true
+}
+
+task npmBuild(type: NpmTask) {
+    dependsOn yarn_install
+    args = ['run', 'build:prod']
+}

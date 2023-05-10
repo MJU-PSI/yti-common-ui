@@ -22,7 +22,7 @@ export function initializeKeycloak(
             initOptions: {
               onLoad: 'check-sso',
               checkLoginIframe: true,
-              silentCheckSsoRedirectUri: `${window.location.origin}/assets/silent-check-sso.html`,
+              silentCheckSsoRedirectUri: `${document.baseURI}/assets/silent-check-sso.html`,
               messageReceiveTimeout: 5000
             }
           })

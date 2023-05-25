@@ -11,14 +11,38 @@ msgstr ""
 "Last-Translator: \n"
 "Language-Team: \n"
 
-msgid "{{title}}"
-msgstr ""
+msgid "Cancel"
+msgstr "Prekliči"
 
 msgid "Copy value to clipboard"
-msgstr "Kopirajte {{value}} v odložišče"
+msgstr "Kopiraj {{value}} v odložišče"
 
 msgid "Copied to clipboard"
 msgstr "Kopirano v odložišče"
+
+msgid "SUPERSEDED"
+msgstr "Nadomeščeno"
+
+msgid "RETIRED"
+msgstr "Upokojena"
+
+msgid "VALID"
+msgstr "Veljavno"
+
+msgid "INVALID"
+msgstr "Neveljavno"
+
+msgid "DRAFT"
+msgstr "Osnutek"
+
+msgid "INCOMPLETE"
+msgstr "Nepopolna"
+
+msgid "SUGGESTED"
+msgstr "Predlagano"
+
+msgid "{{title}}"
+msgstr "{{naslov}}"
 
 msgid "value"
 msgstr "vrednost"
@@ -27,10 +51,7 @@ msgid "{{paragraph }}"
 msgstr ""
 
 msgid "Yes"
-msgstr "Da"
-
-msgid "Cancel"
-msgstr "Prekliči"
+msgstr "ja"
 
 msgid "{{body}}"
 msgstr ""
@@ -39,7 +60,7 @@ msgid "Close"
 msgstr "Zapri"
 
 msgid "This service is developed and maintained by Digital and Population Data Services Agency"
-msgstr "To storitev razvija in vzdržuje Agencija za digitalne storitve in podatke o prebivalstvu"
+msgstr "To storitev razvija in vzdržuje Agencija za digitalne in populacijske storitve"
 
 msgid "Information about the service"
 msgstr "Informacije o storitvi"
@@ -51,7 +72,7 @@ msgid "Accessibility"
 msgstr "Dostopnost"
 
 msgid "User support"
-msgstr "Uporabniška podpora"
+msgstr "Podpora uporabnikom"
 
 msgid "Feedback"
 msgstr "Povratne informacije"
@@ -60,7 +81,7 @@ msgid "Sourcecode is licensed under EUPL-1.2 license."
 msgstr "Izvorna koda je licencirana pod licenco EUPL-1.2."
 
 msgid "Content has been licensed with CC by 4.0 license."
-msgstr "Vsebina je licenčna s CC z licenco 4.0."
+msgstr "Vsebina je bila licencirana z licenco CC by 4.0."
 
 msgid "Contact"
 msgstr "Kontakt"
@@ -69,10 +90,10 @@ msgid "Login"
 msgstr "Vpiši se"
 
 msgid "eDuuni information"
-msgstr ""
+msgstr "Prijavite se s svojim eDuuni ID. Za urejanje vsebine na tem spletnem mestu je potrebna prijava."
 
 msgid "Login information"
-msgstr "Podatki za prijavo"
+msgstr "Spodnji gumbi vas pripeljejo do storitve eDuuni ID. Po prijavi boste samodejno preusmerjeni nazaj na to spletno mesto."
 
 msgid "Log In"
 msgstr "Vpiši se"
@@ -81,40 +102,19 @@ msgid "Register"
 msgstr "Registrirajte se"
 
 msgid "MENU"
-msgstr "MENU"
-
-msgid "INVALID"
-msgstr "NEPOPOLNO"
-
-msgid "INCOMPLETE"
-msgstr "NEKONČANO"
-
-msgid "SUGGESTED"
-msgstr "PREDLAGANO"
-
-msgid "VALID"
-msgstr "VELJAVNO"
-
-msgid "SUPERSEDED"
-msgstr "PREDELANO"
-
-msgid "RETIRED"
-msgstr "ODVZETO"
-
-msgid "DRAFT"
-msgstr "OSNUTEK"
+msgstr "MENI"
 
 msgid "Edit in progress"
-msgstr "Urejanje poteka"
+msgstr "Urejanje v teku"
 
 msgid "Are you sure that you want to continue? By continuing unsaved changes will be lost."
-msgstr "Ali ste prepričani, da želite nadaljevati? Če nadaljujete neshranjene spremembe, bodo izgubljene."
+msgstr "Ste prepričani, da želite nadaljevati? Če nadaljujete, bodo neshranjene spremembe izgubljene."
 
 msgid "Modals are open"
-msgstr "Načini so odprti"
+msgstr "Modali so odprti"
 
 msgid "Are you sure that you want to continue? By continuing all modals will be closed."
-msgstr "Ali ste prepričani, da želite nadaljevati? Z nadaljevanjem bodo vsi načini zaprti."
+msgstr "Ste prepričani, da želite nadaljevati? Z nadaljevanjem bodo vsi modali zaprti."
 
 msgid "Required"
 msgstr "Obvezno"

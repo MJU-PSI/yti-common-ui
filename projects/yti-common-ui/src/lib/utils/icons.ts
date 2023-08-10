@@ -1,6 +1,6 @@
 export type MaterialIconDef = { name: string, colorClass: string };
 
-const warningSvgIcon = '../assets/icons/material/ic_warning_24px.svg';
+const warningSvgIcon = 'assets/icons/material/ic_warning_24px.svg';
 const warningMaterialIcon: MaterialIconDef = {name: 'warning', colorClass: 'icon-danger'};
 
 const vocabularyTypeMaterialIcons: { [typeId: string]: MaterialIconDef|undefined } = {
@@ -9,33 +9,33 @@ const vocabularyTypeMaterialIcons: { [typeId: string]: MaterialIconDef|undefined
 };
 
 const informationDomainSvgIcons: { [notation: string]: any } = {
-  'P1': '../assets/icons/kapa/icon_asuminen.svg', // Asuminen
-  'P2': '../assets/icons/kapa/icon_kerrostalo.svg', // Rakennettu ympäristö
-  'P3': '../assets/icons/kapa/icon_perhe.svg', // Perheiden palvelut
-  'P4': '../assets/icons/kapa/icon_muutokset_ja_kriisitilanteet.svg', // Sosiaalipalvelut
-  'P5': '../assets/icons/kapa/icon_laakari.svg', // Terveydenhuolto, sairaanhoito ja ravitsemus
-  'P6': '../assets/icons/kapa/icon_esitys.svg', // Koulutus
-  'P7': '../assets/icons/kapa/icon_oikeus.svg', // Oikeusturva
-  'P8': '../assets/icons/kapa/icon_vaaka_2.svg', // Demokratia
-  'P9': '../assets/icons/kapa/icon_hallintorakennus.svg', // Yleiset tieto- ja hallintopalvelut
-  'P10': '../assets/icons/kapa/icon_kayttaja.svg', // Työ ja työttömyys
-  'P11': '../assets/icons/kapa/icon_yrittaja.svg',// Elinkeinot
-  'P12': '../assets/icons/kapa/icon_tyonantajuus.svg', // Työnantajan palvelut
-  'P13': '../assets/icons/kapa/icon_laina.svg', // Eläkkeet
-  'P14': '../assets/icons/kapa/icon_talous.svg', // Verotus ja julkinen talous
-  'P15': '../assets/icons/kapa/icon_taloustiedot.svg', // Yksityinen talous ja rahoitus
-  'P16': '../assets/icons/kapa/icon_liikenne.svg', // Liikenne
-  'P17': '../assets/icons/kapa/icon_kansainvalistyminen.svg', // Matkailu
-  'P18': '../assets/icons/kapa/icon_kartat.svg', // Kartat
-  'P19': '../assets/icons/kapa/icon_yhteistyo.svg', // Turvallisuus
-  'P20': '../assets/icons/kapa/icon_ratkaisu.svg', // Järjestys
-  'P21': '../assets/icons/kapa/icon_pankkikortit.svg', // Kuluttaja-asiat
-  'P22': '../assets/icons/kapa/icon_palveluvayla.svg', // Maahan- ja maastamuutto
-  'P23': '../assets/icons/kapa/icon_kauppa.svg', // Ympäristö
-  'P24': '../assets/icons/kapa/icon_kasvu.svg', // Luonnonvarat, eläimet ja kasvit
-  'P25': '../assets/icons/kapa/icon_kulttuuri.svg', // Kulttuuri
-  'P26': '../assets/icons/kapa/icon_keskustelu.svg', // Viestintä
-  'P27': '../assets/icons/kapa/icon_liikunta.svg' // Liikunta ja ulkoilu
+  'P1': 'assets/icons/kapa/icon_asuminen.svg', // Asuminen
+  'P2': 'assets/icons/kapa/icon_kerrostalo.svg', // Rakennettu ympäristö
+  'P3': 'assets/icons/kapa/icon_perhe.svg', // Perheiden palvelut
+  'P4': 'assets/icons/kapa/icon_muutokset_ja_kriisitilanteet.svg', // Sosiaalipalvelut
+  'P5': 'assets/icons/kapa/icon_laakari.svg', // Terveydenhuolto, sairaanhoito ja ravitsemus
+  'P6': 'assets/icons/kapa/icon_esitys.svg', // Koulutus
+  'P7': 'assets/icons/kapa/icon_oikeus.svg', // Oikeusturva
+  'P8': 'assets/icons/kapa/icon_vaaka_2.svg', // Demokratia
+  'P9': 'assets/icons/kapa/icon_hallintorakennus.svg', // Yleiset tieto- ja hallintopalvelut
+  'P10': 'assets/icons/kapa/icon_kayttaja.svg', // Työ ja työttömyys
+  'P11': 'assets/icons/kapa/icon_yrittaja.svg',// Elinkeinot
+  'P12': 'assets/icons/kapa/icon_tyonantajuus.svg', // Työnantajan palvelut
+  'P13': 'assets/icons/kapa/icon_laina.svg', // Eläkkeet
+  'P14': 'assets/icons/kapa/icon_talous.svg', // Verotus ja julkinen talous
+  'P15': 'assets/icons/kapa/icon_taloustiedot.svg', // Yksityinen talous ja rahoitus
+  'P16': 'assets/icons/kapa/icon_liikenne.svg', // Liikenne
+  'P17': 'assets/icons/kapa/icon_kansainvalistyminen.svg', // Matkailu
+  'P18': 'assets/icons/kapa/icon_kartat.svg', // Kartat
+  'P19': 'assets/icons/kapa/icon_yhteistyo.svg', // Turvallisuus
+  'P20': 'assets/icons/kapa/icon_ratkaisu.svg', // Järjestys
+  'P21': 'assets/icons/kapa/icon_pankkikortit.svg', // Kuluttaja-asiat
+  'P22': 'assets/icons/kapa/icon_palveluvayla.svg', // Maahan- ja maastamuutto
+  'P23': 'assets/icons/kapa/icon_kauppa.svg', // Ympäristö
+  'P24': 'assets/icons/kapa/icon_kasvu.svg', // Luonnonvarat, eläimet ja kasvit
+  'P25': 'assets/icons/kapa/icon_kulttuuri.svg', // Kulttuuri
+  'P26': 'assets/icons/kapa/icon_keskustelu.svg', // Viestintä
+  'P27': 'assets/icons/kapa/icon_liikunta.svg' // Liikunta ja ulkoilu
 };
 
 const dataModelingMaterialIcons: { [type: string]: MaterialIconDef|undefined } = {

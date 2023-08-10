@@ -2,7 +2,7 @@ import { Component } from '@angular/core';
 
 declare var require: any;
 
-const image = '../assets/ajax-loading-indicator-small.gif';
+const image = 'assets/ajax-loading-indicator-small.gif';
 
 @Component({
   selector: 'app-ajax-loading-indicator-small',

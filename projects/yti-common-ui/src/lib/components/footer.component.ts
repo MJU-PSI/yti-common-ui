@@ -10,7 +10,7 @@ import { TranslateService } from '@ngx-translate/core';
 
       <div class="row">
         <div class="col-12 pb-2">
-          <a [routerLink]="['/']"><h4 class="title">{{title}}</h4></a>
+          <a href="./"><h4 class="title">{{title}}</h4></a>
         </div>
       </div>
 

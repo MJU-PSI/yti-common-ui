@@ -62,8 +62,8 @@ msgstr "To storitev razvija in vzdržuje Ministrstvo za digitalno preobrazbo Rep
 msgid "Information about the service"
 msgstr "Informacije o storitvi"
 
-msgid "Description of file"
-msgstr "Opis datoteke"
+msgid "Privacy and protection of personal data"
+msgstr "Zasebnost in varstvo osebnih podatkov"
 
 msgid "Accessibility"
 msgstr "Dostopnost"

@@ -36,6 +36,8 @@ import { YtiCommonUiConfig } from './yti-common-ui-config';
 import { YTI_COMMON_UI_CONFIG } from './yti-common-ui-config.token';
 import { HttpClient } from '@angular/common/http';
 import { LocationStrategy } from '@angular/common';
+import { AccessibilityStatementComponent } from '../public-api';
+import { PrivacyStatementComponent } from './components/privacy-statement.component';
 
 const components = [
   AccordionChevronComponent,
@@ -61,7 +63,9 @@ const components = [
   StatusComponent,
   IconComponent,
   ClipboardComponent,
-  AlertModalComponent
+  AlertModalComponent,
+  AccessibilityStatementComponent,
+  PrivacyStatementComponent
 ];
 @NgModule({
   declarations: [

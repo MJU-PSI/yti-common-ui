@@ -48,8 +48,8 @@ msgstr "Verkkopalvelun kehittämisestä vastaa Digi- ja väestötietovirasto"
 msgid "Information about the service"
 msgstr "Tietoa palvelusta"
 
-msgid "Description of file"
-msgstr "Tietosuojaseloste"
+msgid "Privacy and protection of personal data"
+msgstr "Yksityisyys ja henkilötietojen suoja"
 
 msgid "Accessibility"
 msgstr "Saavutettavuus"

@@ -23,6 +23,8 @@ export * from './lib/components/required-symbol.component';
 export * from './lib/components/status.component';
 export * from './lib/components/status-dropdown.component';
 export * from './lib/components/clipboard';
+export * from './lib/components/accessibility-statement.component';
+export * from './lib/components/privacy-statement.component';
 
 export * from './lib/entities/status';
 

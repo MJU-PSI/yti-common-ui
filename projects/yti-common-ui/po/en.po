@@ -48,7 +48,7 @@ msgstr ""
 msgid "Information about the service"
 msgstr ""
 
-msgid "Description of file"
+msgid "Privacy and protection of personal data"
 msgstr ""
 
 msgid "Accessibility"

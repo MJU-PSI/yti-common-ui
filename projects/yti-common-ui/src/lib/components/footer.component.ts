@@ -26,10 +26,10 @@ import { TranslateService } from '@ngx-translate/core';
               <a id="information_link" (click)="informationClick.emit()" translate>Information about the service</a>
             </li>
             <li>
-              <a id="description_of_file_link" [href]="descriptionOfFileLink" target="_blank" rel="noopener noreferrer" translate>Description of file</a>
+              <a id="description_of_file_link" (click)="privacyClick.emit()" translate>Privacy and protection of personal data</a>
             </li>
             <li>
-              <a id="accessibility_link" [href]="accessibilityLink" target="_blank" rel="noopener noreferrer" translate>Accessibility</a>
+              <a id="accessibility_link" (click)="accessibilityClick.emit()" translate>Accessibility</a>
             </li>
             <li *ngIf="showUserSupportLink()">
               <a id="user_support_link" href="/ohjeet" translate>User support</a>
@@ -65,6 +65,8 @@ export class FooterComponent {
   @Input() version?: string;
   @Input() showLicenseIcon?: boolean;
   @Output() informationClick = new EventEmitter();
+  @Output() privacyClick = new EventEmitter();
+  @Output() accessibilityClick = new EventEmitter();
 
   constructor(private translateService: TranslateService) {
   }
@@ -79,7 +81,7 @@ export class FooterComponent {
 
   get feedbackLink() {
     const subject = this.translateService.instant('Contact') + ':%20' + this.title;
-    return 'mailto:yhteentoimivuus@dvv.fi?subject=' + subject;
+    return 'mailto:centralni-besednjak.mdp@gov.si?subject=' + subject;
   }
 
   get descriptionOfFileLink() {

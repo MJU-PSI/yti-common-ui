@@ -115,3 +115,9 @@ msgstr "Ste prepričani, da želite nadaljevati? Z nadaljevanjem se bodo vsi mod
 
 msgid "Required"
 msgstr "Zahtevano"
+
+msgid "PUBLIC"
+msgstr "Javno"
+
+msgid "PRIVATE"
+msgstr "Zasebno"

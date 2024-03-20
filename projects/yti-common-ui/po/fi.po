@@ -134,3 +134,9 @@ msgstr "Pakollinen kenttä"
 
 #~ msgid "UNFINISHED"
 #~ msgstr "Keskeneräinen"
+
+msgid "PUBLIC"
+msgstr "Public"
+
+msgid "PRIVATE"
+msgstr "Private"

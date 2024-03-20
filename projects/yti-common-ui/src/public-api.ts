@@ -27,6 +27,7 @@ export * from './lib/components/accessibility-statement.component';
 export * from './lib/components/privacy-statement.component';
 
 export * from './lib/entities/status';
+export * from './lib/entities/visibility';
 
 export * from './lib/types/localization';
 export * from './lib/types/location';
